@@ -1,2 +1,3 @@
 import pandas as pd
-print("Test Execution")
+data=pd.read_csv('extract_data.csv')
+data
