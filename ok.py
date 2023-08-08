@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import re
 
-file_path = "c:/Users/muppa/Desktop/Intership/NSWHEAVYFRONT.ndjson"
+file_path = "NSWHEAVYFRONT.ndjson"
 with open(file_path, 'r') as file:
     json_data = file.read()
 
@@ -79,7 +79,7 @@ conditions = {
 }
 print(conditions)
 
-df=pd.read_csv('c:/Users/muppa/Desktop/Intership/NSW-540FinalValidationProcessed.csv',dtype={'cardnumber': str})
+df = pd.read_csv('extract_data.csv', dtype={'cardnumber': str})
 #df['Last name'] = df['Last name'].fillna('Unknown')
 #df['First name'].fillna('Unknown', inplace=True)
 
